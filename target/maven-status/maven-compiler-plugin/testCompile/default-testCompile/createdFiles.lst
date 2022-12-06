@@ -1,0 +1,14 @@
+org\example\stepsDefin\C04_Currency.class
+org\example\pages\PG04_ShoppingCart.class
+org\example\pages\PG03_HomePage.class
+org\example\stepsDefin\Hooks.class
+org\example\stepsDefin\C01_RegistrationSteps.class
+org\example\pages\PG05_WishList.class
+org\example\stepsDefin\C02_LoginSteps.class
+org\example\testRunner\runners.class
+org\example\pages\PG02_Login.class
+org\example\pages\PG01_Registarion.class
+org\example\stepsDefin\C05_ShopingCart.class
+org\example\stepsDefin\C03_SearchItemSteps.class
+org\example\pages\PG06_MakeOrder.class
+org\example\stepsDefin\C06_OrderSteps.class

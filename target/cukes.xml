@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="14" time="589.082">
+<testcase classname="Customer Registration New Account" name="User could register with valid data" time="98.009">
+<system-out><![CDATA[Given user go to register page..............................................passed
+Then user select gender type................................................passed
+And user enter first name "Ahmed" and last name "Riyad".....................passed
+Then user enter date of birth...............................................passed
+Then user enter email "1@example.com" field and company name and check options.passed
+And user enter Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+Then user clicks on register button.........................................passed
+Then success message is displayed in Screen.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer Registration and Customer Login" name="User could log in with valid email and password" time="22.828">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@example.com" and Password "P@ssw0rd"...............passed
+When user clicks on login button............................................passed
+Then Screen Navigate to home page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer Registration and Customer Login" name="User could reset his/her password successfully" time="20.923">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user clicks on Forget password Link....................................passed
+Then user enter email "1@example.com".......................................passed
+When user clicks on Recover button..........................................passed
+Then Success massage appears in green on screen.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Searching for products" name="Logged User could search for any product" time="19.427">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@example.com" and Password "P@ssw0rd"...............passed
+When user clicks on login button............................................passed
+Given user search for items in search box For "Lenovo"......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Searching for products" name="Logged User could search for any product 2" time="22.007">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@example.com" and Password "P@ssw0rd"...............passed
+When user clicks on login button............................................passed
+Given user search for items in search box For "Fahrenheit"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Searching for products" name="Logged User could search for any product 3" time="19.476">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@example.com" and Password "P@ssw0rd"...............passed
+When user clicks on login button............................................passed
+Given user search for items in search box For "Shoes".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Change Products Currencies" name="Logged User could switch between currencies US-Euro" time="26.037">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@1example.com" and Password "P@ssw0rd"..............passed
+When user clicks on login button............................................passed
+Given user clicks on currencies list and select euro........................passed
+Then user can see € sign in products........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Change Products Currencies" name="Logged user could select different Categories" time="32.873">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@1example.com" and Password "P@ssw0rd"..............passed
+When user clicks on login button............................................passed
+Given user select different category tabs...................................passed
+Then user select Computers and go to sub category Software..................passed
+When user clicks on currencies list and select euro.........................passed
+Then user can see € sign in products........................................passed
+And user select Windows-8-Pro...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart (Add Product/s, Update Quantity)" name="Logged user could add products to Shopping cart By filter" time="45.658">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@example.com" and Password "P@ssw0rd"...............passed
+When user clicks on login button............................................passed
+Given user select Apparel and go to sub category Shoes......................passed
+Then user select color red from CheckBox....................................passed
+Then filter option view results.............................................passed
+And user add item to Shopping cart..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart (Add Product/s, Update Quantity)" name="Logged user could add different products to Shopping cart" time="61.367">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@example.com" and Password "P@ssw0rd"...............passed
+When user clicks on login button............................................passed
+Given user select Apparel and go to sub category Shoes......................passed
+Then user select color red from CheckBox....................................passed
+Then filter option view results.............................................passed
+And user add item to Shopping cart..........................................passed
+Then user go to Electronics category........................................passed
+And user select Cell phones Subcategory.....................................passed
+Then user select Mobile HTC One M-8.........................................passed
+Then user add mobiles to Quantity...........................................passed
+Then user add mobile to Shopping cart.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart (Add Product/s, Update Quantity, Remove Product)" name="Logged user add products to Cart and update / remove items" time="51.204">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@example.com" and Password "P@ssw0rd"...............passed
+When user clicks on login button............................................passed
+Given user go to Electronics category.......................................passed
+And user select Cell phones Subcategory.....................................passed
+Then user select Mobile HTC One M-8.........................................passed
+Then user add mobiles to Quantity...........................................passed
+Then user add mobile to Shopping cart.......................................passed
+Then user select Apparel and go to sub category Shoes.......................passed
+Then user select color red from CheckBox....................................passed
+Then filter option view results.............................................passed
+And user add item to Shopping cart..........................................passed
+And user go to Shopping Cart page...........................................passed
+Then user update Shopping cart Quantity.....................................passed
+And user remove one of items from cart......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could add different products to Wishlist &amp; Compare" name="Logged user could add different products to Wishlist" time="36.525">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@example.com" and Password "P@ssw0rd"...............passed
+When user clicks on login button............................................passed
+Given user select Apparel and go to sub category Shoes......................passed
+Then user select color red from CheckBox....................................passed
+Then user select size and color.............................................passed
+Then user add item to Wishlist..............................................passed
+Then user select Computers and go to sub category Software..................passed
+And user select Windows-8-Pro and added to Wishlist.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could add different products to Wishlist &amp; Compare" name="Logged user could add different products to compare list" time="32.075">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@example.com" and Password "P@ssw0rd"...............passed
+When user clicks on login button............................................passed
+Given user go to Electronics category.......................................passed
+And user select Cell phones Subcategory.....................................passed
+Then user select Mobile HTC One M-8.........................................passed
+Then user add mobile to compare list........................................passed
+Then user go to Electronics category........................................passed
+And user select Cell phones Subcategory.....................................passed
+Then user select Mobile HTC One Mini Blue...................................passed
+Then user go to Compare Page................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could Create Successful Order" name="Logged user can update items and order" time="99.507">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1@example.com" and Password "P@ssw0rd"...............passed
+When user clicks on login button............................................passed
+Then user go to Electronics category........................................passed
+And user select Cell phones Subcategory.....................................passed
+Then user select Mobile HTC One M-8.........................................passed
+Then user add mobiles to Quantity...........................................passed
+Then user add mobile to Shopping cart.......................................passed
+Then user select Apparel and go to sub category Shoes.......................passed
+Then user select color red from CheckBox....................................passed
+Then filter option view results.............................................passed
+And user add item to Shopping cart..........................................passed
+And user go to Shopping Cart page...........................................passed
+Then user update Shopping cart Quantity.....................................passed
+Then user check Agree Box and press CheckOut................................passed
+Then user fill shipping form................................................passed
+When User Check Out Order Successfully......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
